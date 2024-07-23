@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales_NET8.Web", "Sales_NET8.Web\Sales_NET8.Web.csproj", "{B37CF025-FB5B-4472-8A0A-6A17A7D2ED2A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B37CF025-FB5B-4472-8A0A-6A17A7D2ED2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37CF025-FB5B-4472-8A0A-6A17A7D2ED2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37CF025-FB5B-4472-8A0A-6A17A7D2ED2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37CF025-FB5B-4472-8A0A-6A17A7D2ED2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
