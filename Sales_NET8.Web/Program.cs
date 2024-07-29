@@ -7,6 +7,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer("name=LocalConnection"));
 
+
+//Add the runtime compilation package
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
+//Injection of the DataContext class
+builder.Services.AddDbContext<DataContext>(o =>
+{
+	o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
